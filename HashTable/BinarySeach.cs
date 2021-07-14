@@ -20,8 +20,7 @@ namespace HashTable
         class BinarySearchTree<T> where T : IComparable
         {
             public TreeNode<T> root;
-            int count = 0;
-            
+           
             public void AddNode(T value)
             {
                 TreeNode<T> newNode = new TreeNode<T>(value);
