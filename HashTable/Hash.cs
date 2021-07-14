@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace HashTable
 {
+    public struct KeyValue<k, v>
+    {
+        public k Key { get; set; }
+        public v Value { get; set; }
+
+    }
     class Hash<K, V>
     {
         private readonly int listSize;
@@ -76,11 +82,6 @@ namespace HashTable
         }
     }
 
-     public struct KeyValue<k, v>
-     {
-        public k Key { get; set; }
-        public v Value { get; set; }
-
-     }
+     
 }
 
